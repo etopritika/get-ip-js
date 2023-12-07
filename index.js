@@ -5,7 +5,7 @@ const ip = async () => {
       throw new Error("Network response was not ok.");
     }
     const data = await response.json();
-    console.log(data);
+    alert(`Your IP address: ${data.ipAddress}`);
   } catch (error) {
     console.error("There has been a problem with your fetch operation:", error);
   }
